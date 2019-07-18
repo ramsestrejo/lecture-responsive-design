@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<style>
+		main section {
+			width : 32%;
+			height : 200px;
+			background-color : #eeeeee;
+			line-height: 50px;
+			border : 1px red solid;
+		}
+
+		main , header , form {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+			align-content: center;
+		}
+		body { 
+			max-width : 80%;
+			margin : auto;
+		}
+		
+		header img {
+			width: 100%;
+			height : auto;
+		}
+
+		header section {	
+			width : 48%;
+		}
+
+		form {
+			margin: 2rem 0;
+		}
+@media only screen and ( max-width : 800px ) {
+
+		header img {
+			display: none;
+		}		
+
+} 		
+
+@media only screen and ( max-width : 500px ) {
+
+		header section  {
+			width : 100%;
+			margin : 1rem 0;
+		}		
+
+		main section {
+			width : 100%;
+		}		
+} 
+
+		</style>
+</head>
+<body>
+	<header>
+		<img src='https://www.nehachoudhary.com/wp-content/uploads/2019/04/landscape-panoroma.jpg' />
+		<form>
+				<section>
+					<label>From</label> <input type="text"/>
+				</section>
+				<section>
+					<label>Destination</label> <input type="text"/>
+				</section>
+		</form>
+	</header>
+	<main>
+		<section><p>Visit Toronto</p></section>
+		<section><p>Visit Montreal</p></section>
+		<section><p>Visit Calgary</p></section>
+	</main>
+</body>
+</html>

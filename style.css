@@ -1,0 +1,52 @@
+html {
+  font-size: 24px;
+}
+
+body {
+  width: 80%;
+  margin: auto;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+}
+header form {
+  margin: 2rem;
+}
+header section {
+  display: inline-block;
+  width: 49%;
+}
+
+main section {
+  display: inline-block;
+  width: 28%;
+  margin: 0.5rem 0.5rem;
+  border: 1px solid #0000ff;
+  height: 10rem;
+}
+main section p {
+  position: relative;
+  display: inline-block;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+@media only screen and (max-width: 720px) {
+  header img {
+    display: none;
+  }
+
+  header form section {
+    width: 100%;
+    margin: 0.5rem;
+  }
+
+  main section {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
